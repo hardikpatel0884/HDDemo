@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expanse Manager</title>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <h1>Expanse Manager</h1>
+
+<div>
+    <h2>Add friend</h2>
+    <input type="text" oninput="friendEnterCheck(this)" placeholder="Name" id="txtFriendAdd" />
+    <button id="btnFriendAdd" style="visibility: hidden" onclick="addFriend(document.getElementById('txtFriendAdd').value)">Add</button>
+</div>
+
+<div>
+    <h2>add Expanse</h2>
+    <button onclick="generateExpanseForm()">Add New Expanse</button>
+    <div id="divAddExpanse"></div>
+
+</div><br>
+    <button onclick="getResult()">get Result</button>
+
+
+<div id="result"></div>
+</body>
+</html>
